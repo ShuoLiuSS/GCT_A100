@@ -42,39 +42,39 @@ python inference.py
 ```
 # Changes
 
-Comparing with the original code, here are the main changes I made:
+This new version of GCT can be trained on more advanced GPUs like Nvidia A100. Comparing with the original code, here are the main changes I made:
 
 1. Modified promptNextAction function:
 
-Removed all user prompts except for final message 
+  Removed all user prompts except for final message 
 
-Changed to automatically save to 'w_trained' folder 
+  Changed to automatically save to 'w_trained' folder 
 
-Removed option to continue training after saving 
+  Removed option to continue training after saving 
 
-Removed folder existence checking and user inputs 
+  Removed folder existence checking and user inputs 
 
-Added simple "Training ends" message
+  Added simple "Training ends" message
 
 
 2. Fixed history array length issue in train_model:
 
-Added array length matching before creating DataFrame 
+  Added array length matching before creating DataFrame 
 
-Added padding for test metrics arrays to match training arrays length 
+  Added padding for test metrics arrays to match training arrays length 
 
-Added error handling for DataFrame creation
+  Added error handling for DataFrame creation
 
 
 These changes:
 
-Made the saving process automatic instead of interactive 
+  Made the saving process automatic instead of interactive 
 
-Fixed the array length mismatch error 
+  Fixed the array length mismatch error 
 
-Simplified the post-training process 
+  Simplified the post-training process 
 
-Made continuing training require a new command with -load_weights
+  Made continuing training require a new command with -load_weights
 
 
 
