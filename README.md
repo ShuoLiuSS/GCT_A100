@@ -42,9 +42,22 @@ python inference.py
 ```
 # Changes
 
-This new version of GCT can be trained on more advanced GPUs like Nvidia A100. Comparing with the original code, here are the main changes I made:
+Comparing with the original code, here are the main changes I made:
+1. Make it compatible to train on more advanced GPUs like Nvidia A100:
+   
+    -Updated PyTorch to 1.8.0 with CUDA 11.1 support for A100
+   
+    -Added moses package explicitly
+   
+    -Simplified base dependencies using conda-forge channel
+   
+    -Kept torchtext at 0.6.0 for code compatibility
+   
+    -Made some version requirements more flexible with >= where appropriate
+   
+    -Removed Windows-specific dependencies
 
-1. Modified promptNextAction function:
+2. Modified promptNextAction function:
 
     - Removed all user prompts except for final message 
 
@@ -57,7 +70,7 @@ This new version of GCT can be trained on more advanced GPUs like Nvidia A100. C
     - Added simple "Training ends" message
 
 
-2. Fixed history array length issue in train_model:
+3. Fixed history array length issue in train_model:
 
     - Added array length matching before creating DataFrame 
 
@@ -67,6 +80,7 @@ This new version of GCT can be trained on more advanced GPUs like Nvidia A100. C
 
 
 These changes:
+    - Made GCT compatible on Nvidia A100 GPU
 
     - Made the saving process automatic instead of interactive 
 
