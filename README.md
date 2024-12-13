@@ -40,7 +40,36 @@ python train.py -load_weights w_trained -epochs 2
 ```
 python inference.py
 ```
+# Changes
 
+Comparing with the original code, here are the main changes I made:
+
+Modified promptNextAction function:
+
+Removed all user prompts except for final message
+Changed to automatically save to 'w_trained' folder
+Removed option to continue training after saving
+Removed folder existence checking and user inputs
+Added simple "Training ends" message
+
+
+Fixed history array length issue in train_model:
+
+Added array length matching before creating DataFrame
+Added padding for test metrics arrays to match training arrays length
+Added error handling for DataFrame creation
+
+
+These changes:
+
+Made the saving process automatic instead of interactive
+Fixed the array length mismatch error
+Simplified the post-training process
+Made continuing training require a new command with -load_weights
+
+
+
+The core training functionality, loss calculations, and model architecture remain exactly the same as in the original code.
 
 # References
 Original GCT code was borrowed and modified from:https://github.com/Hyunseung-Kim/molGCT  
