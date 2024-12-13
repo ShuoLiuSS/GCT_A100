@@ -45,17 +45,17 @@ python inference.py
 Comparing with the original code, here are the main changes I made:
 1. Make it compatible to train on more advanced GPUs like Nvidia A100:
    
-    -Updated PyTorch to 1.8.0 with CUDA 11.1 support for A100
+    - Updated PyTorch to 1.8.0 with CUDA 11.1 support for A100
    
-    -Added moses package explicitly
+    - Added moses package explicitly
    
-    -Simplified base dependencies using conda-forge channel
+    - Simplified base dependencies using conda-forge channel
    
-    -Kept torchtext at 0.6.0 for code compatibility
+    - Kept torchtext at 0.6.0 for code compatibility
    
-    -Made some version requirements more flexible with >= where appropriate
+    - Made some version requirements more flexible with >= where appropriate
    
-    -Removed Windows-specific dependencies
+    - Removed Windows-specific dependencies
 
 2. Modified promptNextAction function:
 
@@ -80,6 +80,7 @@ Comparing with the original code, here are the main changes I made:
 
 
 These changes:
+
     - Made GCT compatible on Nvidia A100 GPU
 
     - Made the saving process automatic instead of interactive 
