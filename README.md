@@ -16,7 +16,8 @@ Hyunseung Kim, Jonggeol Na*, and Won Bo Lee*, "Generative Chemical Transformer: 
   year={2021},
   publisher={ACS Publications}
 }
-`
+
+```
 # Implementation
 This code was tested in Windows OS
 1. Set up your anaconda environment with the following code:
