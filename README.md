@@ -43,6 +43,6 @@ python inference.py
 
 
 # References
-Original GCT code was borrowed and modified from:https://github.com/Hyunseung-Kim/molGCT
+Original GCT code was borrowed and modified from:https://github.com/Hyunseung-Kim/molGCT  
 Basic Transformer code was borrowed and modified from: https://github.com/SamLynnEvans/Transformer  
 Molecular data were borrowed from: https://github.com/molecularsets/moses/tree/master/data
