@@ -44,7 +44,7 @@ python inference.py
 
 Comparing with the original code, here are the main changes I made:
 
-Modified promptNextAction function:
+1. Modified promptNextAction function:
 
 Removed all user prompts except for final message 
 
@@ -57,7 +57,7 @@ Removed folder existence checking and user inputs
 Added simple "Training ends" message
 
 
-Fixed history array length issue in train_model:
+2. Fixed history array length issue in train_model:
 
 Added array length matching before creating DataFrame 
 
