@@ -27,6 +27,7 @@ conda env create -f molgct_env.yaml
 2. Run to train GCT:
 ```
 python train.py
+
 On Google Colab: !/content/drive/MyDrive/molgct_env/miniconda3/envs/molgct/bin/python /content/drive/MyDrive/GCT/train.py 
 ```
 3. Continue to train GCT from previous trained weights:
